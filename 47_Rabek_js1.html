@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body{
+
+    background-color:orange;
+}
+</style>
+
+<script>
+function validateForm() 
+{
+    
+
+    if(document.myform.Activityname.value=="")
+    {
+        alert("Please Enter The Activity Name ");
+        document.myform.Activityname.focus();
+        return false;
+}
+
+var t = document.forms["myform"]["Faculty Name"];
+
+
+	
+	if (selectNAME(t)) {
+		 alert('Please input valid Email ID!!!');
+      return false;
+	}
+
+    }
+}
+
+</script>
+
+<fieldset>
+<img src="http://www.dbclmumbai.org/images/DBIT_logoPNG.png" alt="DON BOSCO" width="150" height="150" align="left">
+<div style="background-color:yellow;color:black;padding:20px">
+<h1 align="center">DON BOSCO INSTITUTE OF TECHNOLOGY</h1>
+<h3 align="center">STUDENT FACULTY ACTIVITIES</h3>
+</div></fieldset>
+<br>
+
+
+
+  
+  <fieldset>
+  <legend><h3>INFORMATION:</h3></legend>
+  <table border=0 align="center" >
+<form name="myform" action="action_page.php" onsubmit="return validateForm()"  method="post" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+<tr>
+ <td>Faculty Name</td>
+<td>:</td>
+<td>
+<select name="NAME">
+  <option value="no" selected="">--Select Department--</option>
+  <option value="aruna" >ARUNA</option>
+  <option value="nilesh">NILESH</option>
+  <option value="sushree">SUSHREE</option>
+  <option value="shiv">SHIV</option>
+  <option value="uday">UDAY</option>
+  <option value="vAisahali">VAISHALI</option>
+</select>
+</td>
+</tr>
+<tr>
+ <td>Activity name</td>
+<td>:</td>
+<td><input type="text" name="Activityname" id="activityname" place holder="abc" autocomplete></td>
+</tr>
+<tr>
+<td>start date</td>
+<td>:</td>
+<td><input type="date" name="S.t"  value="abc"></td>
+</tr>
+<tr>
+<td>end date</td>
+<td>:</td>
+<td><input type="date" name="S.t"  value="abc"></td>
+</tr>
+<tr>
+<td>no.of students</td>
+<td>:</td>
+<td><input type="number" name="no.ofstudents" id="number" value="2" autocomplete></td>
+  </tr>
+</table>
+<style>
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>student details</h2>
+
+<table>
+  <tr>
+    <th>department</th>
+    <th>class</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>contact</th>
+  </tr>
+  <tr>
+    <td>IT</td>
+    <td>SE</td>
+    <td>xyz</td>
+    <td>luxanadar@gmail.com</td>
+    <td>828564752</td>
+  </tr>
+  <tr>
+    <td>IT</td>
+    <td>TE</td>
+    <td>TRY</td>
+    <td>dsfre@gmail.com</td>
+    <td>885555565</td>
+  </tr>
+</table>
+
+
+
+
+<br>
+<input type="submit" value="SUBMIT">&emsp;&emsp;&emsp;&emsp;<input type="submit" value="RESET">
+<br><br>
+<h1><a href="file:///home/dbit/Desktop/form2.html" >Project detail</a> </h1>
+<h1><a href="file:///C:/Users/Rabek/Desktop/47_rabek_p1.html" >faculty detail</a> </h1>
+<footer><h5 style="text-align:right;color:browm">DESIGNED AND DEVELOPED BY RABEK</h5></footer>
+</fieldset>
+</form>
+
+</body>
+</head>
+</html>

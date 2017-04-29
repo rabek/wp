@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body{
+
+    background-color:orange;
+}
+</style>
+
+<script>
+function validateForm() 
+
+
+var t = document.forms["myform"]["Faculty Name"];
+
+
+	
+	if (selectNAME(t)) {
+		 alert('Please input valid Name!!!');
+      return false;
+	}
+
+    }
+}
+
+</script>
+<fieldset>
+<img src="index.png"alt="DON BOSCO" width="150" height="150"align="left">
+<div style="background-color:yellow;color:black;padding:20px;">
+<h1 align="center">STUDENT FACULTY ACTIVITIES</h1>
+</fieldset>
+</fieldset>
+<form name="myform" action="action_page.php" onsubmit="return validateForm()"  method="post" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+
+
+ Faculty Name:<br>
+  <select name="NAME">
+ <option value="no" selected="">--Select Name--</option>
+  <option value="aruna" >ARUNA</option>
+  <option value="nilesh">NILESH</option>
+  <option value="sushree">SUSHREE</option>
+  <option value="shiv">SHIV</option>
+  <option value="uday">UDAY</option>
+  <option value="vAisahali">VAISHALI</option>
+</select>
+<br>
+<br>
+<style>
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
+<table align="left">
+  <tr>
+    <th>Project</th>
+    <th>Title</th>
+    <th>start date</th>
+    <th>End date</th>
+    <th>Name</th>
+</tr>
+<tr>
+<td>Android app</td>
+<td>xyz</td>
+<td>29/7/16</td>
+<td>28/9/19</td>
+<td>rabek</td>
+<br>
+<br>
+</tr>
+</table>
+</form>
+<br>
+<br>
+<input type="submit" value="SUBMIT">&emsp;&emsp;&emsp;&emsp;<input type="submit" value="RESET">
+<br><br>
+<footer><h5 style="text-align:right;color:browm">DESIGNED AND DEVELOPED BY RABEK</h5></footer>
+</fieldset>
+</body>
+</head>
+</html>
